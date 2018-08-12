@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2014 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -13,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/google/go-github/github"
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 func TestRepositories_CRUD(t *testing.T) {

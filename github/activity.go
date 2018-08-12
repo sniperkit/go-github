@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -5,7 +10,9 @@
 
 package github
 
-import "context"
+import (
+	"context"
+)
 
 // ActivityService handles communication with the activity related
 // methods of the GitHub API.

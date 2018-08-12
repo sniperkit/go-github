@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2017 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -12,10 +17,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/google/go-github/github"
 	"golang.org/x/oauth2"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/log"
+
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 func init() {

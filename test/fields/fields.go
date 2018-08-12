@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2014 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -25,8 +30,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/google/go-github/github"
 	"golang.org/x/oauth2"
+
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 var (
@@ -63,8 +69,8 @@ func main() {
 		{"user", &github.User{}},
 		{"users/willnorris/keys", &[]github.Key{}},
 		{"orgs/google-test", &github.Organization{}},
-		{"repos/google/go-github", &github.Repository{}},
-		{"repos/google/go-github/issues/1", &github.Issue{}},
+		{"repos/sniperkit/snk.fork.go-github", &github.Repository{}},
+		{"repos/sniperkit/snk.fork.go-github/issues/1", &github.Issue{}},
 		{"/gists/9257657", &github.Gist{}},
 	} {
 		err := testType(tt.url, tt.typ)

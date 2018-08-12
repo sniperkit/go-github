@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -8,7 +13,7 @@ Package github provides a client for using the GitHub API.
 
 Usage:
 
-	import "github.com/google/go-github/github"
+	import "github.com/sniperkit/snk.fork.go-github/github"
 
 Construct a new GitHub client, then use the various services on the client to
 access different parts of the GitHub API. For example:
@@ -35,7 +40,7 @@ pass cancelation signals and deadlines to various services of the client for
 handling a request. In case there is no context available, then context.Background()
 can be used as a starting point.
 
-For more sample code snippets, head over to the https://github.com/google/go-github/tree/master/example directory.
+For more sample code snippets, head over to the https://github.com/sniperkit/snk.fork.go-github/tree/master/example directory.
 
 Authentication
 

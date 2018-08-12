@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2014 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -21,7 +26,7 @@ func TestMarkdown(t *testing.T) {
 	input := &markdownRequest{
 		Text:    String("# text #"),
 		Mode:    String("gfm"),
-		Context: String("google/go-github"),
+		Context: String("sniperkit/snk.fork.go-github"),
 	}
 	mux.HandleFunc("/markdown", func(w http.ResponseWriter, r *http.Request) {
 		v := new(markdownRequest)
@@ -36,7 +41,7 @@ func TestMarkdown(t *testing.T) {
 
 	md, _, err := client.Markdown(context.Background(), "# text #", &MarkdownOptions{
 		Mode:    "gfm",
-		Context: "google/go-github",
+		Context: "sniperkit/snk.fork.go-github",
 	})
 	if err != nil {
 		t.Errorf("Markdown returned error: %v", err)

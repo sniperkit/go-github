@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -10,14 +15,14 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/google/go-github/github"
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 func ExampleClient_Markdown() {
 	client := github.NewClient(nil)
 
 	input := "# heading #\n\nLink to issue #1"
-	opt := &github.MarkdownOptions{Mode: "gfm", Context: "google/go-github"}
+	opt := &github.MarkdownOptions{Mode: "gfm", Context: "sniperkit/snk.fork.go-github"}
 
 	output, _, err := client.Markdown(context.Background(), input, opt)
 	if err != nil {
@@ -42,7 +47,7 @@ func ExampleRepositoriesService_GetReadme() {
 		return
 	}
 
-	fmt.Printf("google/go-github README:\n%v\n", content)
+	fmt.Printf("sniperkit/snk.fork.go-github README:\n%v\n", content)
 }
 
 func ExampleRepositoriesService_List() {
@@ -67,7 +72,7 @@ func ExampleRepositoriesService_CreateFile() {
 	// so you will need to modify the example to provide an oauth client to
 	// github.NewClient() instead of nil. See the following documentation for more
 	// information on how to authenticate with the client:
-	// https://godoc.org/github.com/google/go-github/github#hdr-Authentication
+	// https://godoc.org/github.com/sniperkit/snk.fork.go-github/github#hdr-Authentication
 	client := github.NewClient(nil)
 
 	ctx := context.Background()
@@ -111,14 +116,14 @@ func ExamplePullRequestsService_Create() {
 	// so you will need to modify the example to provide an oauth client to
 	// github.NewClient() instead of nil. See the following documentation for more
 	// information on how to authenticate with the client:
-	// https://godoc.org/github.com/google/go-github/github#hdr-Authentication
+	// https://godoc.org/github.com/sniperkit/snk.fork.go-github/github#hdr-Authentication
 	client := github.NewClient(nil)
 
 	newPR := &github.NewPullRequest{
 		Title:               github.String("My awesome pull request"),
 		Head:                github.String("branch_to_merge"),
 		Base:                github.String("master"),
-		Body:                github.String("This is the description of the PR created with the package `github.com/google/go-github/github`"),
+		Body:                github.String("This is the description of the PR created with the package `github.com/sniperkit/snk.fork.go-github/github`"),
 		MaintainerCanModify: github.Bool(true),
 	}
 
@@ -139,7 +144,7 @@ func ExampleTeamsService_ListTeams() {
 	// the example to provide an oauth client to github.NewClient() instead of nil.
 	// See the following documentation for more information on how to authenticate
 	// with the client:
-	// https://godoc.org/github.com/google/go-github/github#hdr-Authentication
+	// https://godoc.org/github.com/sniperkit/snk.fork.go-github/github#hdr-Authentication
 	client := github.NewClient(nil)
 
 	teamName := "Developers team"

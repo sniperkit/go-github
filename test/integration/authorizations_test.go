@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -16,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/go-github/github"
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 const msgEnvMissing = "Skipping test because the required environment variable (%v) is not present."

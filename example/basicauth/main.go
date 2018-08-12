@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2015 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -16,8 +21,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/google/go-github/github"
 	"golang.org/x/crypto/ssh/terminal"
+
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 func main() {

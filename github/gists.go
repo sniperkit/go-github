@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by BSD-style

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2018 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -11,8 +16,10 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/google/go-github/github"
+
 	"golang.org/x/oauth2"
+
+	"github.com/sniperkit/snk.fork.go-github/github"
 )
 
 func fetchAllUserMigrations() ([]*github.UserMigration, error) {

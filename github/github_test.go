@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -46,7 +51,7 @@ func setup() (client *Client, mux *http.ServeMux, serverURL string, teardown fun
 		fmt.Fprintln(os.Stderr, "\t"+req.URL.String())
 		fmt.Fprintln(os.Stderr)
 		fmt.Fprintln(os.Stderr, "\tDid you accidentally use an absolute endpoint URL rather than relative?")
-		fmt.Fprintln(os.Stderr, "\tSee https://github.com/google/go-github/issues/752 for information.")
+		fmt.Fprintln(os.Stderr, "\tSee https://github.com/sniperkit/snk.fork.go-github/issues/752 for information.")
 		http.Error(w, "Client.BaseURL path prefix is not preserved in the request URL.", http.StatusInternalServerError)
 	})
 

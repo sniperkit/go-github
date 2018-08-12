@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -216,7 +221,7 @@ func (s *RepositoriesService) GetCommitSHA1(ctx context.Context, owner, repo, re
 }
 
 // CompareCommits compares a range of commits with each other.
-// todo: support media formats - https://github.com/google/go-github/issues/6
+// todo: support media formats - https://github.com/sniperkit/snk.fork.go-github/issues/6
 //
 // GitHub API docs: https://developer.github.com/v3/repos/commits/#compare-two-commits
 func (s *RepositoriesService) CompareCommits(ctx context.Context, owner, repo string, base, head string) (*CommitsComparison, *Response, error) {

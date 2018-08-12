@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2013 The go-github AUTHORS. All rights reserved.
 //
 // Use of this source code is governed by a BSD-style
@@ -482,7 +487,7 @@ func TestPullRequestsService_Merge(t *testing.T) {
 	}
 }
 
-// Test that different merge options produce expected PUT requests. See issue https://github.com/google/go-github/issues/500.
+// Test that different merge options produce expected PUT requests. See issue https://github.com/sniperkit/snk.fork.go-github/issues/500.
 func TestPullRequestsService_Merge_options(t *testing.T) {
 	client, mux, _, teardown := setup()
 	defer teardown()
